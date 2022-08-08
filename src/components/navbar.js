@@ -29,36 +29,36 @@ const Navbar = ({ siteTitle }) => {
 
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li className="nav-item">
-              <ExactNavLink
-                to="/about"
-              >
-                Home
-              </ExactNavLink>
-            </li>
+                <ExactNavLink
+                    to="/about"
+                >
+                    Home
+                </ExactNavLink>
+                </li>
             
             <li className="nav-item">
-              <ExactNavLink
-                to="/posts"
-              >
-                Posts
-              </ExactNavLink>
-            </li>
+                <ExactNavLink
+                    to="/posts"
+                >
+                    Posts
+                </ExactNavLink>
+                </li>
 
             <li className="nav-item">
-              <ExactNavLink
-                to="/course-notes"
-              >
-                Course Notes
-              </ExactNavLink>
-            </li>
+                <ExactNavLink
+                    to="/course-notes"
+                >
+                    Course Notes
+                </ExactNavLink>
+                </li>
 
             <li className="nav-item">
-              <ExactNavLink
-                to="/cv"
-              >
-                CV
-              </ExactNavLink>
-            </li>
+                <ExactNavLink
+                    to="/cv"
+                >
+                    CV
+                </ExactNavLink>
+                </li>
 
           </ul>
         </div>

@@ -12,6 +12,12 @@ const SecondPage = () => (
     {/* Home Page */}
     <Seo title="Home" />
 
+    <div>
+      <h2>
+        Miguel Rivera-Lanas's Blog:
+      </h2>      
+    </div>
+
     {/* Div 0 */}
     <div className={styles.textCenter}>
     {/* <div> */}
@@ -19,7 +25,7 @@ const SecondPage = () => (
       <StaticImage
         src="../images/migueltest.png"
         loading="eager"
-        width={350}
+        width={250}
         quality={60}
         formats={["auto", "webp", "avif"]}
         alt=""
@@ -29,9 +35,6 @@ const SecondPage = () => (
 
     {/* Div 1; intro */}
     <div>
-      <h1>
-        Miguel Rivera-Lanas's Blog:
-      </h1>
 
       <p className={styles.intro}>
         This blog 
