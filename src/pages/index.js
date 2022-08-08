@@ -35,12 +35,7 @@ const links = [
 
 const samplePageLinks = [
   {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
+    text: "About Me", url: "about", badge: false, description: "A simple example of linking to another page within a Gatsby site"},
   { text: "TypeScript", url: "using-typescript" },
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
@@ -71,7 +66,7 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Home" />
+    {/* <Seo title="Home" /> */}
     <div className={styles.textCenter}>
       <StaticImage
         src="../images/example.png"

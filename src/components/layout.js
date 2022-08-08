@@ -9,6 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Navbar from "./navbar";
+
 import Header from "./header"
 import "./layout.css"
 
@@ -33,13 +35,18 @@ const Layout = ({ children }) => {
           padding: `var(--size-gutter)`,
         }}
       >
+        {/* Navbar */}
+        <Navbar siteTitle="rivera-lanasm" />    
+        
         <main>{children}</main>
+        
         <footer
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
           }}
         >
+        
           © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
