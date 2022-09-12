@@ -9,9 +9,14 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+// import header
 import Header from "./header"
-// Styling below
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+// original styling
+import "./layout.css"
+
+// scss styling
+import '../styles/styles.scss'
 
 
 const Layout = ({ children }) => {

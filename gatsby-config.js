@@ -1,10 +1,18 @@
 module.exports = {
+
+  // ======================
+  // Site Metadata
+  // ======================  
   siteMetadata: {
     title: `rivera-lanasm`,
-    description: `Miguel's Blog`,
+    description: `Writing about Intersections of Technology and Public Policy`,
     author: `Miguel Rivera-Lanas`,
     // siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+
+  // ======================
+  // Plugins
+  // ======================
   plugins: [
     
     `gatsby-plugin-image`,
@@ -34,7 +42,17 @@ module.exports = {
         },
       },
     
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    // `gatsby-transformer-remark`,
+
+    `gatsby-plugin-mdx`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    }    
   
   
   ],

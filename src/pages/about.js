@@ -1,7 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import * as styles from "../components/index.module.css"
+
+// styling
+import * as styles from "../styles/index.module.css"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -9,8 +10,8 @@ import Seo from "../components/seo"
 const SecondPage = () => (
   <Layout>
 
-    {/* Home Page */}
-    <Seo title="Home" />
+    {/* About Page */}
+    {/* <Seo title="About" /> */}
 
     <div>
       <h2>
