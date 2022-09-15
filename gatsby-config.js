@@ -45,12 +45,18 @@ module.exports = {
     `gatsby-plugin-sass`,
     // `gatsby-transformer-remark`,
 
-    `gatsby-plugin-mdx`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        defaultLayouts: {
+           posts: require.resolve('./src/components/post-layout.js'),
+        }}},
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages/`,
       },
     }    
   
